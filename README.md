@@ -1,27 +1,48 @@
-# 📧 Mikail - Email Generator App
+# 📧 Email Generator App
 
 A web application that generates structured, professional emails based on different customer communication scenarios.
 
+---
+
 ## 🚀 Features
 
-- Onboarding / Welcome Emails
-- Follow-up / Check-in Emails
-- Renewal / Retention Emails
-- Dynamic forms
-- Real-time preview
+- Select email type:
+  - Onboarding / Welcome
+  - Follow-up / Check-in
+  - Renewal / Retention
+- Dynamic form inputs
+- Real-time email preview
 - Copy to clipboard
-- Responsive UI
 
-## 🛠 Tech Stack
+---
+
+## 🧩 Email Types
+
+### 1. Onboarding / Welcome
+Guides new users through their first steps and highlights key features.
+
+### 2. Follow-up / Check-in
+Helps monitor user experience, identify issues, and maintain engagement.
+
+### 3. Renewal / Retention
+Encourages users to continue their subscription by reinforcing product value.
+
+---
+
+## 🛠️ Tech Stack
 
 - Angular
 - TypeScript
-- SCSS
+- HTML / SCSS
 
-## 📌 Jira Ticket
+---
 
-SW-12 - Initial project setup and base structure.
+## 🎯 Purpose
 
-## 📍 Status
+This project aims to improve productivity by automating email creation and ensuring clear, consistent communication with customers.
 
-In Progress 🚧
+---
+
+## 📌 Status
+
+In progress 🚧
