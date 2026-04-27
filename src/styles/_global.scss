@@ -1,0 +1,10 @@
+@use './mixins';
+@use './variables' as *;
+
+body {
+  background: $color-white;
+  font-family: $font-main;
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+}

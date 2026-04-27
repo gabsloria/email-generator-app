@@ -1,0 +1,83 @@
+<section class="email-generator" id="email-generator">
+  <div class="email-generator-header"><span>Mik</span>ail</div>
+
+  <div class="generator">
+    <div class="generator-left">
+      <div class="email-generator-first-step">
+        <div class="email-data-generation-selection">
+          <h2>Email Generator</h2>
+          <p>Let's create your email</p>
+
+          <div class="email-type-select" tabindex="0" (keydown)="onKeydown($event)">
+            <button class="email-type-select-trigger" type="button" (click)="toggleSelect()">
+              <span>{{ selectedOption }}</span>
+
+              <span class="select-arrow" [class.open]="isOpen"> ▼ </span>
+            </button>
+
+            <div class="email-type-options" *ngIf="isOpen">
+              <button
+                class="email-type-option"
+                type="button"
+                [class.active]="selectedOption === 'Onboarding'"
+                (click)="selectOption('Onboarding')"
+              >
+                Onboarding
+              </button>
+
+              <button
+                class="email-type-option"
+                type="button"
+                [class.active]="selectedOption === 'Check-in'"
+                (click)="selectOption('Check-in')"
+              >
+                Check-in
+              </button>
+
+              <button
+                class="email-type-option"
+                type="button"
+                [class.active]="selectedOption === 'Renewal / Retention'"
+                (click)="selectOption('Renewal / Retention')"
+              >
+                Renewal / Retention
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <img src="assets/images/mikail-icon.webp" alt="Logo image" />
+      </div>
+    </div>
+
+    <div class="generator-right">
+      <div class="generator-topbar">
+        <h2>Final Email</h2>
+
+        <div class="btn-actions">
+          <a class="copy-btn" href=""><span>Copy Email</span></a>
+          <a class="restart-btn" href=""><span>Restart Tool</span></a>
+        </div>
+      </div>
+
+      <div class="email-preview-wrapper">
+        <div class="email-preview-top">
+          <p class="email-preview-label">Editable Email</p>
+
+          <div class="email-preview-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="email-preview-box">
+          <textarea
+            class="email-preview-textarea"
+            placeholder="Your generated email will appear here..."
+          ></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
